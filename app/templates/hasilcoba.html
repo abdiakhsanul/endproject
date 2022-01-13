@@ -1,0 +1,28 @@
+<HTML>
+<BODY>
+<img src="{{fixfix}}" style="width:400px;height:500px;">
+<table>
+     <thead>
+ <tr>
+     <th>pengeluaran</th>
+     <th>biayaiklan</th>
+     <th>pendapatan</th>
+     <th>pengeluaran</th>
+     <th>biayaiklan</th>
+     <th>biayaiklan</th>
+ </tr>
+ </thead>
+     <tbody>
+     {% for result in value %}
+     <tr>
+         <td>{{result.plat}}</td>
+         <td>{{result.nama}}</td>
+         <td>{{result.ttl}}</td>
+         <td>{{result.alamat}}</td>
+         <td>{{result.no_telp}}</td>
+    </tr>
+     {% endfor %}
+ </tbody>
+</table>
+</BODY>
+</HTML>
